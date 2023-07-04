@@ -50,7 +50,7 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
         const styleVSCodeUri = webview.asWebviewUri(
             vscode.Uri.joinPath(this._extensionUri, "media", "vscode.css")
         );
-
+        
         const scriptUri = webview.asWebviewUri(
             vscode.Uri.joinPath(this._extensionUri, "out/compiled", "sidebar.js")
         );
@@ -66,7 +66,7 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
 		    <html lang="en">
 		    <head>
 		    	<meta charset="UTF-8">
-                <meta http-equiv="Content-Security-Policy" content="img-src https: data:; style-src 'unsafe-inline' ${webview.cspSource}; script-src 'nonce-${nonce}';">
+                <meta http-equiv="content_security_policy": "default-src 'self' style-src 'self' 'unsafe-inline';">
 		    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		    	<link href="${styleResetUri}" rel="stylesheet">
 		    	<link href="${styleVSCodeUri}" rel="stylesheet">
@@ -74,6 +74,7 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
 		    </head>
             <body>
 		    	<script nonce="${nonce}" src="${scriptUri}"></script>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		    </body>
 		    </html>
         `;

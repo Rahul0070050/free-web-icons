@@ -1,0 +1,50 @@
+[
+    {
+        "version": "6.0.1",
+        "cdn": "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css\" integrity=\"sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==\" crossorigin=\"anonymous\" referrerpolicy=\"no-referrer\" />",
+        "icons": [
+            {
+                "name": "home",
+                "showIcon": "fa-solid fa-house"
+            },
+            {
+                "name": "search",
+                "showIcon": "fa-solid fa-magnifying-glass"
+            },
+            {
+                "name": "user",
+                "showIcon": "fa-solid fa-user"
+            },
+            {
+                "name": "check",
+                "showIcon": "fa-solid fa-check"
+            }
+        ]
+    },
+    {
+        "version": "4.0.5",
+        "cdn": "FA v-4.0.5",
+        "icons": [
+            {
+                "name": "happy-happy",
+                "show-icon": "HH",
+                "link": "fa-HH"
+            },
+            {
+                "name": "love-love",
+                "show-icon": "LL",
+                "link": "fa-LL"
+            },
+            {
+                "name": "aloshy-aloshy",
+                "show-icon": "AA",
+                "link": "fa-AA"
+            },
+            {
+                "name": "adwaith-adwaith",
+                "show-icon": "ADAD",
+                "link": "fa-ADAD"
+            }
+        ]
+    }
+]

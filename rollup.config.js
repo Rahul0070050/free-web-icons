@@ -4,6 +4,10 @@ import commonjs from "@rollup/plugin-commonjs";
 import { terser } from "rollup-plugin-terser";
 import sveltePreprocess from "svelte-preprocess";
 import typescript from "@rollup/plugin-typescript";
+import json from '@rollup/plugin-json'
+import { string } from 'rollup-plugin-string'
+
+
 import path from "path";
 import fs from "fs";
 
@@ -32,6 +36,9 @@ export default fs
           },
           preprocess: sveltePreprocess(),
         }),
+        json({
+          compact: true
+        }),
 
         // If you have external dependencies installed from
         // npm, you'll most likely need these plugins. In
@@ -41,6 +48,9 @@ export default fs
         resolve({
           browser: true,
           dedupe: ["svelte"],
+        }),
+        string({
+          include: 'webview/media/*.*',
         }),
         commonjs(),
         typescript({

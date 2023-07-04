@@ -1,0 +1,54 @@
+[
+    {
+        "version": "0.1.1",
+        "cdn": "BT v-0.1.1",
+        "icons": [
+            {
+                "name": "happy",
+                "show-icon": "H",
+                "link": "bt-H"
+            },
+            {
+                "name": "love",
+                "show-icon": "L",
+                "link": "bt-L"
+            },
+            {
+                "name": "aloshy",
+                "show-icon": "A",
+                "link": "bt-A"
+            },
+            {
+                "name": "adwaith",
+                "show-icon": "AD",
+                "link": "bt-AD"
+            }
+        ]
+    },
+    {
+        "version": "0.3.2",
+        "cdn": "BT v-0.3.2",
+        "icons": [
+            {
+                "name": "happy-happy",
+                "show-icon": "HH",
+                "link": "bt-HH"
+            },
+            {
+                "name": "love-love",
+                "show-icon": "LL",
+                "link": "bt-LL"
+            },
+            {
+                "name": "aloshy-aloshy",
+                "show-icon": "AA",
+                "link": "bt-AA"
+            },
+            {
+                "name": "adwaith-adwaith",
+                "show-icon": "ADAD",
+                "link": "bt-ADAD"
+            }
+        ]
+    }
+]

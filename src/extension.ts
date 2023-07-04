@@ -5,10 +5,10 @@ export function activate(context: vscode.ExtensionContext) {
 
 	const sidebarProvider = new SidebarProvider(context.extensionUri);
 	context.subscriptions.push(
-	  vscode.window.registerWebviewViewProvider(
-		"icons-sidebar",
-		sidebarProvider
-	  )
+		vscode.window.registerWebviewViewProvider(
+			"icons-sidebar",
+			sidebarProvider
+		)
 	);
 
 	context.subscriptions.push(
