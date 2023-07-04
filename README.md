@@ -1,71 +1,33 @@
-# icons README
+# VS Code Extension: Free Icons
 
-This is the README for your extension "icons". After writing up a brief description, we recommend including the following sections.
+## Overview
+This Visual Studio Code extension provides access to all versions of Font Awesome icons. With this extension, you can search for any icon you want, select specific versions, and easily copy icons and their corresponding CDN links.
 
 ## Features
+- Search: Easily search for any Font Awesome icon using keywords or names.
+- Version Selection: Choose specific versions of Font Awesome icons to ensure compatibility with your projects.
+- Copy Icons: Quickly copy the selected icon's HTML code or CSS class to use in your code.
+- Copy CDN: Copy the CDN link for the selected Font Awesome version to include in your HTML files.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Installation
+1. Launch Visual Studio Code.
+2. Go to the Extensions view (Ctrl+Shift+X) or click on the square icon in the left sidebar.
+3. Search for "Free Web Icons" or "rahulor (author name)" and click on the extension with the same name.
+4. Click the "Install" button to install the extension.
+5. Once installed, the extension will be ready for use.
 
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
+## Usage
+1. Open a new or existing HTML file in Visual Studio Code.
+2. Click on the "Free Web Icons" extension icon in the sidebar (represented by the Smiley logo).
+3. The extension panel will appear on the side of the editor.
+4. In the search bar, enter the name or keywords of the icon you want to find.
+5. Select the desired version of Font Awesome from the dropdown menu.
+6. The search results will display matching icons based on your search criteria.
+7. Click on an icon to copy its HTML code to your clipboard.
+8. If needed, click the "Link" button to copy the corresponding Font Awesome CDN link to your clipboard.
 
 ## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+### Version 1.0.0
+- Initial release of the Free Web Icons extension.
+- Provides search functionality for Icons.
+- Allows version selection and copying of icons and CDN links.

@@ -1,140 +1,98 @@
 <script async>
-    import FAIcons from "../media/data/icons/fa.json";
-    import BTIcons from "../media/data/icons/bt.json";
-    import MUIIcons from "../media/data/icons/mui.json";
+    import FAIcons from "../media/data/fa-icons.json";
     import iconVersions from "../media/data/versions.json";
 
     // global variables
-    let selectedIconTypes = "FA";
-    let selectedIconVersion = iconVersions["FA"].versions[0];
+    let selectedIconVersion = iconVersions.versions[0];
     let iconInfo = FAIcons[0]
     window.addEventListener("DOMContentLoaded", () => {
-        iconInfo = FAIcons[0]
+
         // selecting DOM elms
-        let iconTypes = document.getElementsByClassName("icon-types");
-        const iconTypeName = document.getElementById("icon-type-name");
         const messageText = document.getElementById("message-text");
         const iconVersionSelector = document.getElementById("select-version");
         const copyBtn = document.querySelector(".copy-cdn-link-btn");
         const iconListContainer = document.getElementById("icon-list");
+        const searchInput = document.getElementById("search");
+        let search = ""
 
-        // if (typeof(Worker) !== "undefined") {
-        //     console.log('yes');
-        // } else {
-        //     console.log('no');
-        // }
+        copyBtn.addEventListener("click", copyText);
 
-        for (const btn of iconTypes) {
-            btn.addEventListener("click", selectIconType);
-        }
-
-        copyBtn.addEventListener("click", async (e) => {
+        async function copyText (e) {
+            console.log(e.target.getAttribute("data-attar"));
             let message = ""
-            console.log(e.target);
-            if(e.target.getAttribute('data-attar') == 'cdn-copy-btn')
+            let content = ""
+            if(e.target.getAttribute('data-attar') == 'cdn-copy-btn') {
+                content = iconInfo.cdn
                 message = "CDN copied"
-            else
+            }else {
+                content = `<i class='${e.target.getAttribute("data-attar")}'></i>`
                 message = "icon copied"
+            }
 
-            await navigator.clipboard.writeText("hi");
+            await navigator.clipboard.writeText(content);
 
             messageText.innerText = message
+
             messageText.style.zIndex = '11'
             messageText.style.opacity = '11'
 
 
             setTimeout(() => {
-                // messageText.classList.remove('show-message')
                 messageText.style.zIndex = '-1'
                 messageText.style.opacity = '0'
             }, 1000);
-        });
+        }
 
-        showIcons(iconVersions[selectedIconTypes].versions[0], selectedIconTypes);
+        showIcons(iconVersions.versions[0]);
         showVersions();
 
-        iconTypes[0].style.boxShadow =
-            "inset rgba(245, 222, 179, 0.346) 0 0 3px 2px";
-        iconTypes[0].style.transform = "scale(1.1)";
-        iconTypeName.innerText = "FA";
+        console.log(searchInput);
 
-        function selectIconType(e) {
-            for (const btn of iconTypes) {
-                if (e.target.getAttribute("id") == btn.getAttribute("id")) {
-                    selectedIconTypes = e.target.getAttribute("id");
-
-                    iconTypeName.innerText = selectedIconTypes;
-
-                    showVersions();
-                    showIcons(iconVersions[selectedIconTypes].versions[0], selectedIconTypes);
-
-                    btn.style.boxShadow =
-                        "inset rgba(245, 222, 179, 0.346) 0 0 3px 2px";
-                    btn.style.transform = "scale(1.1)";
-                    btn.style.fontWeight = "500";
-                } else {
-                    btn.style.boxShadow =
-                        "rgba(245, 222, 179, 0.346) 0 0 1px 1px";
-                    btn.style.transform = "scale(1)";
-                }
-            }
-        }
+        searchInput.addEventListener('input',(e) => {
+            search = e.target.value;
+            showIcons(selectedIconVersion);
+        })
 
         function showVersions() {
             iconVersionSelector.innerHTML = "";
-            iconVersions[selectedIconTypes].versions.forEach((v) => {
+            iconVersions.versions.forEach((v) => {
                 iconVersionSelector.innerHTML += `<option value=${v}>v:${v}</option>`;
             });
         }
 
-        function showIcons(version, iconType) {
-            switch (iconType) {
-                case "FA":
-                    iconInfo = FAIcons.find((icons) => icons.version == version);
-                    break;
-                case "BT":
-                    iconInfo = BTIcons.find((icons) => icons.version == version);
-                    break;
-                case "MUI":
-                    iconInfo = MUIIcons.find((icons) => icons.version == version);
-                    break;
-                default:
-                    break;
-            }
-            iconListContainer.innerHTML += ``
-            // iconInfo.icons.map(icon => {
-            //     let iTag = document.createElement('i');
-            //     iTag.setAttribute("class",icon.showIcon);
-            //     iTag.setAttribute("title",icon.name);
-            //     iTag.style.cursor = 'pointer !important';
-            //     iTag.style.padding = '0.9rem !important';
-            //     iTag.style.margin = '0.1rem !important';
-            //     iTag.style.boxShadow = 'inset rgba(245, 222, 179, 0.346) 0 0 3px 2px !important';
-            //     iconListContainer.appendChild(iTag)
-            // })
-            // `<i class="${icon.showIcon}" title="${icon.name}" />`
+        
+        function showIcons(version) {
+            iconInfo = FAIcons.find((icons) => icons.version == version);
+            
+            iconListContainer.innerHTML = ``
+                
+            iconInfo.icons.map(icon => {
+                console.log(search != "");
+                console.log(search);
+                if(search != "") {
+                    if(!icon.name.startsWith(search)) {
+                        return null
+                    }
+                }
+                let iTag = document.createElement('i');
+                iTag.setAttribute("class",`${icon.showIcon} svelte-1p5v1u4`);
+                iTag.setAttribute("data-attar",`${icon.showIcon}`);
+                iTag.setAttribute("title", icon.name);
+                iTag.addEventListener('click',copyText)
+                iconListContainer.appendChild(iTag)
+            })
+            // `<i class="fa-solid fa-house" title="home" />`
         }
 
+        
         iconVersionSelector.addEventListener("change", (e) => {
             selectedIconVersion = e.target.value;
-            showIcons(selectedIconVersion, selectedIconTypes);
+            showIcons(selectedIconVersion);
         });
-
     });
-    
-    function handleClick(e) {
-        console.log(e);
-    }
 </script>
 
 <body>
-    <header>
-        <ul>
-            <li class="icon-types" id="FA">FA</li>
-            <li class="icon-types" id="MUI">MUI</li>
-            <li class="icon-types" id="BT">BT</li>
-        </ul>
-    </header>
     <nav>
         <div class="select-version-and-search">
             <div class="search">
@@ -151,12 +109,8 @@
         </div>
     </nav>
     <section class="list-icons">
-        <strong><span id="icon-type-name" /> icons</strong>
-        <div class="icons-container">
+            <div class="icons-container">
             <div class="icon-list" id="icon-list">
-                {#each iconInfo.icons as icon, _}
-                    <i class="{icon.showIcon}" on:click="{handleClick(icon.showIcon)}"></i>
-                {/each}
             </div>
         </div>
     </section>
@@ -164,38 +118,6 @@
 </body>
 
 <style>
-    body {
-        position: relative;
-        height: 100vh;
-        background-color: #181818;
-    }
-    body header ul {
-        overflow-x: auto;
-        list-style: none;
-        display: flex;
-        justify-content: start;
-        margin: 1rem;
-    }
-
-    body header ul::-webkit-scrollbar {
-        display: none;
-    }
-
-    body header ul li {
-        cursor: pointer;
-        margin: 0.5rem 0.4rem !important;
-        padding: 0.3rem 1.1rem !important;
-        box-shadow: rgba(245, 222, 179, 0.346) 0 0 3px 2px;
-    }
-
-    body header ul li:first-child {
-        margin-left: 0.5rem !important;
-    }
-
-    body header ul li:last-child {
-        margin-right: 0.5rem !important;
-    }
-
     body nav .select-version-and-search {
         width: 100% !important;
         display: flex;
