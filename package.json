@@ -1,19 +1,20 @@
 {
-  "name": "icons",
-  "displayName": "free_icons",
-  "description": "simple icons",
+  "name": "free-web-icons",
+  "displayName": "web_icons",
+  "description": "free web icons",
   "version": "0.0.1",
+  "publisher": "rahulor",
   "engines": {
     "vscode": "^1.79.0"
   },
   "categories": [
-    "Other"
+    "web, icons"
   ],
   "activationEvents": [
     "onCommand:icons.showMessage",
     "onView:icons-sidebar"
   ],
-  "main": "./dist/extension.js",
+  "main": "dist/extension.js",
   "contributes": {
     "viewsContainers": {
       "activitybar": [
@@ -43,11 +44,15 @@
       }
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rahul0070050/free-web-icons"
+  },
   "scripts": {
     "vscode:prepublish": "npm run package",
     "compile": "webpack",
     "watch": "concurrently \"rollup -c -w\" \"webpack --mode development --watch\"",
-    "package": "webpack --mode production --devtool hidden-source-map",
+    "package": "rm -rf dist  && rm -rf out && rollup -c && webpack --mode production --devtool hidden-source-map",
     "compile-tests": "tsc -p . --outDir out",
     "watch-tests": "tsc -p . -w --outDir out",
     "pretest": "npm run compile-tests && npm run compile && npm run lint",
