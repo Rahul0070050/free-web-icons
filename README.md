@@ -27,7 +27,7 @@ This Visual Studio Code extension provides access to all versions of Font Awesom
 8. If needed, click the "Link" button to copy the corresponding Font Awesome CDN link to your clipboard.
 
 ## Release Notes
-### Version 1.0.0
+### Version 0.0.4
 - Initial release of the Free Web Icons extension.
 - Provides search functionality for Icons.
 - Allows version selection and copying of icons and CDN links.
