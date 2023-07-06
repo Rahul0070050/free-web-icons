@@ -75,7 +75,7 @@
                     }
                 }
                 let iTag = document.createElement('i');
-                iTag.setAttribute("class",`${icon.showIcon} svelte-1p5v1u4`);
+                iTag.setAttribute("class",`${icon.showIcon} svelte-1a5lyxs`);
                 iTag.setAttribute("data-attar",`${icon.showIcon}`);
                 iTag.setAttribute("title", icon.name);
                 iTag.addEventListener('click',copyText)
@@ -163,11 +163,6 @@
         align-items: center;
         box-shadow: inset rgba(245, 222, 179, 0.346) 0 0 3px 2px;
     }
-    body section strong {
-        text-transform: capitalize;
-        margin: 1rem !important;
-    }
-
     body section .icons-container::-webkit-scrollbar {
         display: none;
     }
