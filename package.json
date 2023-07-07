@@ -3,7 +3,7 @@
   "displayName": "web icons",
   "description": "free web icons",
   "icon": "./media/icon.jpg",
-  "version": "0.0.6",
+  "version": "0.0.5",
   "publisher": "rahulor",
   "engines": {
     "vscode": "^1.79.0"
