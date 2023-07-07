@@ -27,6 +27,335 @@
                 "name": "image",
                 "showIcon": "fa-solid fa-image",
                 "variants": []
+            },
+            {
+                "name": "flag",
+                "showIcon": "fa-brands fa-font-awesome-flag",
+                "variants": []
+            },
+            {
+                "name": "bolt",
+                "showIcon": "fa-solid fa-bolt",
+                "variants": []
+            },
+            {
+                "name": "universal-access",
+                "showIcon": "fa-solid fa-universal-access",
+                "variants": []
+            },
+            {
+                "name": "bell",
+                "showIcon": "fa-solid fa-bell",
+                "variants": []
+            },
+            {
+                "name": "circle",
+                "showIcon": "fas fa-circle",
+                "variants": []
+            },
+            {
+                "name": "cat",
+                "showIcon": "fas fa-cat",
+                "variants": []
+            },
+            {
+                "name": "square-up-right",
+                "showIcon": "fas fa-square-up-right",
+                "variants": []
+            },
+            {
+                "name": "car-side",
+                "showIcon": "fas fa-car-side",
+                "variants": []
+            },
+            {
+                "name": "landmark",
+                "showIcon": "fas fa-landmark",
+                "variants": []
+            },
+            {
+                "name": "briefcase",
+                "showIcon": "fas fa-briefcase",
+                "variants": []
+            },
+            {
+                "name": "hands-holding",
+                "showIcon": "fa fa-hands-holding",
+                "variants": []
+            },
+            {
+                "name": "chart-simple",
+                "showIcon": "fas fa-chart-simple",
+                "variants": []
+            },
+            {
+                "name": "shirt",
+                "showIcon": "fas fa-t-shirt",
+                "variants": []
+            },
+            {
+                "name": "code",
+                "showIcon": "fas fa-code",
+                "variants": []
+            },
+            {
+                "name": "signal",
+                "showIcon": "fa-solid fa-signal",
+                "variants": []
+            },
+            {
+                "name": "digging",
+                "showIcon": "fas fa-person-digging",
+                "variants": []
+            },
+            {
+                "name": "palette",
+                "showIcon": "fas fa-palette",
+                "variants": []
+            }
+            ,
+            {
+                "name": "computer",
+                "showIcon": "fa fa-computer",
+                "variants": []
+            },
+            {
+                "name": "pen",
+                "showIcon": "fa fa-pen",
+                "variants": []
+            },
+            {
+                "name": "burst",
+                "showIcon": "fa-solid fa-burst fa-fw",
+                "variants": []
+            },
+            {
+                "name": "graduation-cap",
+                "showIcon": "fa-solid fa-graduation-cap fa-fw",
+                "variants": []
+            },
+            {
+                "name": "face-grin-wink",
+                "showIcon": "fa-solid fa-face-grin-wink fa-fw",
+                "variants": []
+            },
+            {
+                "name": "hand-paper",
+                "showIcon": "fa-solid fa-hand-paper fa-fw",
+                "variants": []
+            },
+            {
+                "name": "parachute-box",
+                "showIcon": "fa-solid fa-parachute-box fa-fw",
+                "variants": []
+            },
+            {
+                "name": "venus-mars",
+                "showIcon": "fa-solid fa-venus-mars fa-fw",
+                "variants": []
+            },
+            {
+                "name": "truck-fast",
+                "showIcon": "fa-solid fa-truck-fast fa-fw",
+                "variants": []
+            },
+            {
+                "name": "map",
+                "showIcon": "fa-solid fa-map fa-fw",
+                "variants": []
+            },
+            {
+                "name": "anchor",
+                "showIcon": "fa-solid fa-anchor fa-fw",
+                "variants": []
+            },
+            {
+                "name": "film",
+                "showIcon": "fa-solid fa-film fa-fw",
+                "variants": []
+            },
+            {
+                "name": "burger",
+                "showIcon": "fas fa-burger fa-fw",
+                "variants": []
+            },
+            {
+                "name": "bed",
+                "showIcon": "fas fa-bed fa-fw",
+                "variants": []
+            },
+            
+            {
+                "name": "shield",
+                "showIcon": "fas fa-shield fa-fw",
+                "variants": []
+            },
+            {
+                "name": "shapes",
+                "showIcon": "fas fa-shapes fa-fw",
+                "variants": []
+            },
+            {
+                "name": "shopping",
+                "showIcon": "fas fa-bag-shopping fa-fw",
+                "variants": []
+            },
+            {
+                "name": "stethoscope",
+                "showIcon": "fas fa-stethoscope fa-fw",
+                "variants": []
+            },
+            {
+                "name": "music",
+                "showIcon": "fas fa-music fa-fw",
+                "variants": []
+            },
+            {
+                "name": "camera-retro",
+                "showIcon": "fas fa-camera-retro fa-fw",
+                "variants": []
+            },
+            {
+                "name": "check-double",
+                "showIcon": "fas fa-check-double fa-fw",
+                "variants": []
+            },
+            {
+                "name": "quote-left",
+                "showIcon": "fas fa-quote-left fa-fw",
+                "variants": []
+            },
+            {
+                "name": "person-praying",
+                "showIcon": "fas fa-person-praying fa-fw",
+                "variants": []
+            },
+            {
+                "name": "atom",
+                "showIcon": "fas fa-atom fa-fw",
+                "variants": []
+            },
+            {
+                "name": "bullseye",
+                "showIcon": "fa fa-bullseye fa-fw",
+                "variants": []
+            },
+            {
+                "name": "money-bill",
+                "showIcon": "fas fa-money-bill fa-fw",
+                "variants": []
+            },
+            {
+                "name": "box",
+                "showIcon": "fas fa-box fa-fw",
+                "variants": []
+            },
+            {
+                "name": "play",
+                "showIcon": "fas fa-play fa-fw",
+                "variants": []
+            },
+            {
+                "name": "music",
+                "showIcon": "fa fa-music fa-fw",
+                "variants": []
+            },
+            {
+                "name": "circle",
+                "showIcon": "fas fa-circle fa-fw",
+                "variants": []
+            }
+
+            ,
+            {
+                "name": "cloud-arrow-up",
+                "showIcon": "fas fa-cloud-arrow-up fa-fw",
+                "variants": []
+            },
+            {
+                "name": "cloud-sun",
+                "showIcon": "fas fa-cloud-sun fa-fw",
+                "variants": []
+            },
+            {
+                "name": "hashtag",
+                "showIcon": "fas fa-hashtag fa-fw",
+                "variants": []
+            },
+            {
+                "name": "bug",
+                "showIcon": "fa-solid fa-bug fa-fw",
+                "variants": []
+            },
+            {
+                "name": "rotate",
+                "showIcon": "fas fa-rotate fa-fw",
+                "variants": []
+            },
+            {
+                "name": "spa",
+                "showIcon": "fas fa-spa fa-fw",
+                "variants": []
+            },
+            {
+                "name": "shop",
+                "showIcon": "fa-solid fa-shop fa-fw",
+                "variants": []
+            },
+            {
+                "name": "fish",
+                "showIcon": "fa-solid fa-fish fa-fw",
+                "variants": []
+            },
+            {
+                "name": "feather",
+                "showIcon": "fa-solid fa-feather fa-fw",
+                "variants": []
+            },
+            {
+                "name": "sun",
+                "showIcon": "fa-solid fa-sun fa-fw",
+                "variants": []
+            },
+            {
+                "name": "link",
+                "showIcon": "fa-solid fa-link fa-fw",
+                "variants": []
+            },
+            {
+                "name": "pen-fancy",
+                "showIcon": "fa-solid fa-pen-fancy fa-fw",
+                "variants": []
+            },
+            {
+                "name": "heart-pulse",
+                "showIcon": "fas fa-heart-pulse fa-fw",
+                "variants": []
+            },
+            {
+                "name": "calendar-days",
+                "showIcon": "fas fa-calendar-days fa-fw",
+                "variants": []
+            },
+            {
+                "name": "toggle-on",
+                "showIcon": "fas fa-toggle-on fa-fw",
+                "variants": []
+            },
+            {
+                "name": "taxi",
+                "showIcon": "fas fa-taxi fa-fw",
+                "variants": []
+            },
+            {
+                "name": "message",
+                "showIcon": "fas fa-message fa-fw",
+                "variants": []
+            },
+            {
+                "name": "airbnb",
+                "showIcon": "fa fa-airbnb fa-fw",
+                "variants": []
             }
         ]
     },
@@ -57,3 +386,7 @@
         ]
     }
 ]
+
+
+
+

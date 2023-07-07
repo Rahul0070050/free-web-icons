@@ -66,7 +66,7 @@
             
             iconListContainer.innerHTML = ``
                 
-            iconInfo.icons.map(icon => {
+            iconInfo?.icons?.map(icon => {
                 console.log(search != "");
                 console.log(search);
                 if(search != "") {
@@ -75,7 +75,7 @@
                     }
                 }
                 let iTag = document.createElement('i');
-                iTag.setAttribute("class",`${icon.showIcon} svelte-1a5lyxs`);
+                iTag.setAttribute("class",`${icon.showIcon} svelte-1fcwvos`);
                 iTag.setAttribute("data-attar",`${icon.showIcon}`);
                 iTag.setAttribute("title", icon.name);
                 iTag.addEventListener('click',copyText)
@@ -178,8 +178,10 @@
     }
     body section .icons-container .icon-list i {
         cursor: pointer;
-        padding: 0.9rem !important;
+        font-size: medium;
+        padding: 0.7rem !important;
         margin: 0.1rem !important;
+        width: 2.5rem !important;
         box-shadow: inset rgba(245, 222, 179, 0.346) 0 0 3px 2px !important;
     }
     body #message-text {
