@@ -22,11 +22,7 @@
         const iconListContainer = document.getElementById("icon-list");
         const searchInput = document.getElementById("search");
 
-        window.copyText = function copyText(e) {
-            window.navigator.clipboard.writeText(`<i class="${selectedIcon} ${size && size} ${rotation && rotation} ${animation && animation}" style="color: ${color};" />`)
-        }
-        
-        window.openIconInfo = async function openIconInfo (e) {
+        window.copyText = async function copyText(e) {
             console.log(e.target.getAttribute("data-attar"));
             let message = ""
             let content = ""
@@ -34,22 +30,25 @@
                 content = iconInfo.cdn
                 message = "CDN copied"
             }else {
-                content = `<i class='${e.target.getAttribute("data-attar")}'></i>`
+                content = `<i class="${selectedIcon} ${size && size} ${rotation && rotation} ${animation && animation}" style="color: ${color};" />`
                 message = "icon copied"
             }
-
-            await navigator.clipboard.writeText(content);
-
+            
+            await window.navigator.clipboard.writeText(message)
+    
             messageText.innerText = message
-
+    
             messageText.style.zIndex = '11'
             messageText.style.opacity = '11'
-
-
+    
+    
             setTimeout(() => {
                 messageText.style.zIndex = '-1'
                 messageText.style.opacity = '0'
             }, 1000);
+        }
+        
+        window.openIconInfo = async function openIconInfo (e) {
         }
 
         window.openIconInfo = function openIconInfo(e) {
@@ -137,10 +136,6 @@
         rotation = ""
         animation = ""
     }
-
-    function copyCDN() {
-        window.navigator.clipboard.writeText(iconInfo.cdn)
-    }
     
 </script>
 
@@ -155,7 +150,7 @@
                 <!-- <label for="select-version">v: &nbsp;</label> -->
                 <select name="select-version" id="select-version" />
             </div>
-            <span data-attar="cdn-copy-btn" class="copy-cdn-link-btn" on:click={copyCDN}>
+            <span data-attar="cdn-copy-btn" class="copy-cdn-link-btn" on:click={copyText}>
                 <i data-attar="cdn-copy-btn" class="fa-solid fa-link" />
             </span>
         </div>
