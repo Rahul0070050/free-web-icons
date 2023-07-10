@@ -125,6 +125,6 @@ To learn more about Font Awesome and explore their collection of icons, please v
 We would like to express our gratitude to the Font Awesome team for providing the free version, enabling us to incorporate their icons into our extension.
 
 ## Release Notes
-### Version 0.0.9
+### Version 1.0.0
  - CDN updated
 
