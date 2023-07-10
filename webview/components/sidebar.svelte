@@ -30,6 +30,10 @@
                 content = iconInfo.cdn
                 message = "CDN copied"
             }else {
+                selectedIcon = ""
+                size = ""
+                rotation = ""
+                animation = ""
                 content = `<i class="${selectedIcon} ${size && size} ${rotation && rotation} ${animation && animation}" style="color: ${color};" />`
                 message = "icon copied"
             }
@@ -76,7 +80,7 @@
         function showIcons(version) {
             iconInfo = FAIcons.find((icons) => icons.version == version);
             
-            // iconListContainer.innerHTML = ``
+            iconListContainer.innerHTML = ``
 
             iconInfo?.icons?.map((icon,i) => {
                 if(search != "") {
@@ -86,7 +90,7 @@
                 }
 
                 let iTag = document.createElement('i');
-                iTag.setAttribute("class",`${icon.showIcon} svelte-1wf2oa9`);
+                iTag.setAttribute("class",`${icon.showIcon} svelte-1b7ynkf`);
                 iTag.setAttribute("data-attar",`${icon.showIcon}`);
                 iTag.setAttribute("title", icon.name);
                 iTag.addEventListener('click',openIconInfo)
@@ -158,7 +162,6 @@
     <section class="list-icons">
         <div class="icons-container">
             <div class="icon-list" id="icon-list">
-                <i class="fa-solid fa-house" title="home" />
             </div>
             {#if selectedIcon != "" }
                 <div class="icon-info-container" transition:fly={{y: -20}}>
@@ -319,6 +322,7 @@
         padding: 0.1rem 1rem 1rem 1rem !important;
     }
     body section .icon-info-container .headder i {
+        cursor: pointer;
         padding: 0.4rem 0.5rem !important;
         border: 1px solid rgba(255, 255, 255, 0.542);
         color: rgba(255, 255, 255, 0.512);
@@ -379,6 +383,7 @@
         width: 100% !important;
     }
     .copy {
+        cursor: pointer;
         padding: 0.4rem 0.5rem !important;
         width: 90%;
         color: black;
