@@ -24,4 +24,4 @@ jobs:
         run: npm i
 
       - name: publish
-        run: vsce publish -p $DEPLOY_KEY -y
+        run: vsce publish -p ${{secrets.DEPLOY_KEY}} -y
