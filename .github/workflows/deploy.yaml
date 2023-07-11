@@ -23,8 +23,8 @@ jobs:
       - name: install dep
         run: npm i
 
-      - name: install yo generator-code
-        run: npm install -g yo generator-code
+      - name: install vscode/vsce
+        run: npm install @vscode/vsce
 
       - name: publish
         run: vsce publish -p ${{secrets.DEPLOY_KEY}}
