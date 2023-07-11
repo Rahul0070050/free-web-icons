@@ -127,6 +127,6 @@ We would like to express our gratitude to the Font Awesome team for providing th
 ## Release Notes
  - added a pop-up window to filter the selected icon
  - alert message added
-### Version 1.0.1
+### Version 1.0.34
  - CDN updated
 

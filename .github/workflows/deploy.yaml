@@ -1,0 +1,17 @@
+name: deploy project
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: set up nodejs
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm i
+      - run: vsce publish -p $DEPLOY_KEY -y

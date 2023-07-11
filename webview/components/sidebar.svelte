@@ -30,15 +30,16 @@
                 content = iconInfo.cdn
                 message = "CDN copied"
             }else {
-                selectedIcon = ""
-                size = ""
-                rotation = ""
-                animation = ""
                 content = `<i class="${selectedIcon} ${size && size} ${rotation && rotation} ${animation && animation}" style="color: ${color};" />`
                 message = "icon copied"
             }
             
-            await window.navigator.clipboard.writeText(message)
+            await window.navigator.clipboard.writeText(content)
+            
+            size = ""
+            rotation = ""
+            animation = ""
+            selectedIcon = ""
     
             messageText.innerText = message
     
@@ -51,12 +52,9 @@
                 messageText.style.opacity = '0'
             }, 1000);
         }
-        
-        window.openIconInfo = async function openIconInfo (e) {
-        }
 
         window.openIconInfo = function openIconInfo(e) {
-            console.log(e.target);
+            color = "#cccccc"
             selectedIcon = e.target.getAttribute('data-attar')
             selectedIconName = e.target.getAttribute('title').replace('-',' ').toUpperCase()
         }
@@ -136,6 +134,7 @@
 
     function  closeIconInfoWindow() {
         selectedIcon = ""
+        color = ""
         size = ""
         rotation = ""
         animation = ""
@@ -178,7 +177,7 @@
                         <div class="form-control">
                             <label for="size">size</label>
                             <select name="size" id="size" on:click={selectedFilter}>
-                                <option value="none">none</option>
+                                <option value="">none</option>
                                 <option value="fa-sm">sm</option>
                                 <option value="fa-gl">gl</option>
                                 <option value="fa-xl">xl</option>
