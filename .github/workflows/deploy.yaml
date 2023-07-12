@@ -1,5 +1,4 @@
-name: deploy project
-
+name: publish to marketplace visualstudio
 on:
   push:
     branches:
