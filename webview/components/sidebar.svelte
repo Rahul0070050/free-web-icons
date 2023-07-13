@@ -104,6 +104,7 @@
         
         iconVersionSelector.addEventListener("change", (e) => {
             selectedIconVersion = e.target.value;
+            selectedIconVariant = "fas"
             showIcons(selectedIconVersion);
         });
     });
