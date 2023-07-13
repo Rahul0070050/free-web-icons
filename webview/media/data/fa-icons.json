@@ -5,348 +5,279 @@
         "icons": [
             {
                 "name": "home",
-                "showIcon": "fa-solid fa-house",
-                "variants": []
+                "showIcon": "fa-house"
             },
             {
                 "name": "search",
-                "showIcon": "fa-solid fa-magnifying-glass",
-                "variants": []
+                "showIcon": "fa-magnifying-glass"
             },
             {
                 "name": "user",
-                "showIcon": "fa-solid fa-user",
-                "variants": []
+                "showIcon": "fa-user"
             },
             {
                 "name": "check",
-                "showIcon": "fa-solid fa-check",
-                "variants": []
+                "showIcon": "fa-check"
             },
             {
                 "name": "image",
-                "showIcon": "fa-solid fa-image",
-                "variants": []
+                "showIcon": "fa-image"
             },
             {
                 "name": "flag",
-                "showIcon": "fa-brands fa-font-awesome-flag",
-                "variants": []
+                "showIcon": "fa-brands fa-font-awesome-flag"
             },
             {
                 "name": "bolt",
-                "showIcon": "fa-solid fa-bolt",
-                "variants": []
+                "showIcon": "fa-bolt"
             },
             {
                 "name": "universal-access",
-                "showIcon": "fa-solid fa-universal-access",
-                "variants": []
+                "showIcon": "fa-universal-access"
             },
             {
                 "name": "bell",
-                "showIcon": "fa-solid fa-bell",
-                "variants": []
+                "showIcon": "fa-bell"
             },
             {
                 "name": "circle",
-                "showIcon": "fas fa-circle",
-                "variants": []
+                "showIcon": "fa-circle"
             },
             {
                 "name": "cat",
-                "showIcon": "fas fa-cat",
-                "variants": []
+                "showIcon": "fa-cat"
             },
             {
                 "name": "square-up-right",
-                "showIcon": "fas fa-square-up-right",
-                "variants": []
+                "showIcon": "fa-square-up-right"
             },
             {
                 "name": "car-side",
-                "showIcon": "fas fa-car-side",
-                "variants": []
+                "showIcon": "fa-car-side"
             },
             {
                 "name": "landmark",
-                "showIcon": "fas fa-landmark",
-                "variants": []
+                "showIcon": "fa-landmark"
             },
             {
                 "name": "briefcase",
-                "showIcon": "fas fa-briefcase",
-                "variants": []
+                "showIcon": "fa-briefcase"
             },
             {
                 "name": "hands-holding",
-                "showIcon": "fa fa-hands-holding",
-                "variants": []
+                "showIcon": "fa-hands-holding"
             },
             {
                 "name": "chart-simple",
-                "showIcon": "fas fa-chart-simple",
-                "variants": []
+                "showIcon": "fa-chart-simple"
             },
             {
                 "name": "shirt",
-                "showIcon": "fas fa-t-shirt",
-                "variants": []
+                "showIcon": "fa-t-shirt"
             },
             {
                 "name": "code",
-                "showIcon": "fas fa-code",
-                "variants": []
+                "showIcon": "fa-code"
             },
             {
                 "name": "signal",
-                "showIcon": "fa-solid fa-signal",
-                "variants": []
+                "showIcon": "fa-signal"
             },
             {
                 "name": "digging",
-                "showIcon": "fas fa-person-digging",
-                "variants": []
+                "showIcon": "fa-person-digging"
             },
             {
                 "name": "palette",
-                "showIcon": "fas fa-palette",
-                "variants": []
+                "showIcon": "fa-palette"
             },
             {
                 "name": "computer",
-                "showIcon": "fa fa-computer",
-                "variants": []
+                "showIcon": "fa-computer"
             },
             {
                 "name": "pen",
-                "showIcon": "fa fa-pen",
-                "variants": []
+                "showIcon": "fa-pen"
             },
             {
                 "name": "burst",
-                "showIcon": "fa-solid fa-burst fa-fw",
-                "variants": []
+                "showIcon": "fa-burst fa-fw"
             },
             {
                 "name": "graduation-cap",
-                "showIcon": "fa-solid fa-graduation-cap fa-fw",
-                "variants": []
+                "showIcon": "fa-graduation-cap fa-fw"
             },
             {
                 "name": "face-grin-wink",
-                "showIcon": "fa-solid fa-face-grin-wink fa-fw",
-                "variants": []
+                "showIcon": "fa-face-grin-wink fa-fw"
             },
             {
                 "name": "hand-paper",
-                "showIcon": "fa-solid fa-hand-paper fa-fw",
-                "variants": []
+                "showIcon": "fa-hand-paper fa-fw"
             },
             {
                 "name": "parachute-box",
-                "showIcon": "fa-solid fa-parachute-box fa-fw",
-                "variants": []
+                "showIcon": "fa-parachute-box fa-fw"
             },
             {
                 "name": "venus-mars",
-                "showIcon": "fa-solid fa-venus-mars fa-fw",
-                "variants": []
+                "showIcon": "fa-venus-mars fa-fw"
             },
             {
                 "name": "truck-fast",
-                "showIcon": "fa-solid fa-truck-fast fa-fw",
-                "variants": []
+                "showIcon": "fa-truck-fast fa-fw"
             },
             {
                 "name": "map",
-                "showIcon": "fa-solid fa-map fa-fw",
-                "variants": []
+                "showIcon": "fa-map fa-fw"
             },
             {
                 "name": "anchor",
-                "showIcon": "fa-solid fa-anchor fa-fw",
-                "variants": []
+                "showIcon": "fa-anchor fa-fw"
             },
             {
                 "name": "film",
-                "showIcon": "fa-solid fa-film fa-fw",
-                "variants": []
+                "showIcon": "fa-film fa-fw"
             },
             {
                 "name": "burger",
-                "showIcon": "fas fa-burger fa-fw",
-                "variants": []
+                "showIcon": "fa-burger fa-fw"
             },
             {
                 "name": "bed",
-                "showIcon": "fas fa-bed fa-fw",
-                "variants": []
+                "showIcon": "fa-bed fa-fw"
             },
             {
                 "name": "shield",
-                "showIcon": "fas fa-shield fa-fw",
-                "variants": []
+                "showIcon": "fa-shield fa-fw"
             },
             {
                 "name": "shapes",
-                "showIcon": "fas fa-shapes fa-fw",
-                "variants": []
+                "showIcon": "fa-shapes fa-fw"
             },
             {
                 "name": "shopping",
-                "showIcon": "fas fa-bag-shopping fa-fw",
-                "variants": []
+                "showIcon": "fa-bag-shopping fa-fw"
             },
             {
                 "name": "stethoscope",
-                "showIcon": "fas fa-stethoscope fa-fw",
-                "variants": []
+                "showIcon": "fa-stethoscope fa-fw"
             },
             {
                 "name": "camera-retro",
-                "showIcon": "fas fa-camera-retro fa-fw",
-                "variants": []
+                "showIcon": "fa-camera-retro fa-fw"
             },
             {
                 "name": "check-double",
-                "showIcon": "fas fa-check-double fa-fw",
-                "variants": []
+                "showIcon": "fa-check-double fa-fw"
             },
             {
                 "name": "quote-left",
-                "showIcon": "fas fa-quote-left fa-fw",
-                "variants": []
+                "showIcon": "fa-quote-left fa-fw"
             },
             {
                 "name": "person-praying",
-                "showIcon": "fas fa-person-praying fa-fw",
-                "variants": []
+                "showIcon": "fa-person-praying fa-fw"
             },
             {
                 "name": "atom",
-                "showIcon": "fas fa-atom fa-fw",
-                "variants": []
+                "showIcon": "fa-atom fa-fw"
             },
             {
                 "name": "bullseye",
-                "showIcon": "fa fa-bullseye fa-fw",
-                "variants": []
+                "showIcon": "fa-bullseye fa-fw"
             },
             {
                 "name": "money-bill",
-                "showIcon": "fas fa-money-bill fa-fw",
-                "variants": []
+                "showIcon": "fa-money-bill fa-fw"
             },
             {
                 "name": "box",
-                "showIcon": "fas fa-box fa-fw",
-                "variants": []
+                "showIcon": "fa-box fa-fw"
             },
             {
                 "name": "play",
-                "showIcon": "fas fa-play fa-fw",
-                "variants": []
+                "showIcon": "fa-play fa-fw"
             },
             {
                 "name": "music",
-                "showIcon": "fa fa-music fa-fw",
-                "variants": []
+                "showIcon": "fa-music fa-fw"
             },
             {
                 "name": "circle",
-                "showIcon": "fas fa-circle fa-fw",
-                "variants": []
+                "showIcon": "fa-circle fa-fw"
             },
             {
                 "name": "cloud-arrow-up",
-                "showIcon": "fas fa-cloud-arrow-up fa-fw",
-                "variants": []
+                "showIcon": "fa-cloud-arrow-up fa-fw"
             },
             {
                 "name": "cloud-sun",
-                "showIcon": "fas fa-cloud-sun fa-fw",
-                "variants": []
+                "showIcon": "fa-cloud-sun fa-fw"
             },
             {
                 "name": "hashtag",
-                "showIcon": "fas fa-hashtag fa-fw",
-                "variants": []
+                "showIcon": "fa-hashtag fa-fw"
             },
             {
                 "name": "bug",
-                "showIcon": "fa-solid fa-bug fa-fw",
-                "variants": []
+                "showIcon": "fa-bug fa-fw"
             },
             {
                 "name": "rotate",
-                "showIcon": "fas fa-rotate fa-fw",
-                "variants": []
+                "showIcon": "fa-rotate fa-fw"
             },
             {
                 "name": "spa",
-                "showIcon": "fas fa-spa fa-fw",
-                "variants": []
+                "showIcon": "fa-spa fa-fw"
             },
             {
                 "name": "shop",
-                "showIcon": "fa-solid fa-shop fa-fw",
-                "variants": []
+                "showIcon": "fa-shop fa-fw"
             },
             {
                 "name": "fish",
-                "showIcon": "fa-solid fa-fish fa-fw",
-                "variants": []
+                "showIcon": "fa-fish fa-fw"
             },
             {
                 "name": "feather",
-                "showIcon": "fa-solid fa-feather fa-fw",
-                "variants": []
+                "showIcon": "fa-feather fa-fw"
             },
             {
                 "name": "sun",
-                "showIcon": "fa-solid fa-sun fa-fw",
-                "variants": []
+                "showIcon": "fa-sun fa-fw"
             },
             {
                 "name": "link",
-                "showIcon": "fa-solid fa-link fa-fw",
-                "variants": []
+                "showIcon": "fa-link fa-fw"
             },
             {
                 "name": "pen-fancy",
-                "showIcon": "fa-solid fa-pen-fancy fa-fw",
-                "variants": []
+                "showIcon": "fa-pen-fancy fa-fw"
             },
             {
                 "name": "heart-pulse",
-                "showIcon": "fas fa-heart-pulse fa-fw",
-                "variants": []
+                "showIcon": "fa-heart-pulse fa-fw"
             },
             {
                 "name": "calendar-days",
-                "showIcon": "fas fa-calendar-days fa-fw",
-                "variants": []
+                "showIcon": "fa-calendar-days fa-fw"
             },
             {
                 "name": "toggle-on",
-                "showIcon": "fas fa-toggle-on fa-fw",
-                "variants": []
+                "showIcon": "fa-toggle-on fa-fw"
             },
             {
                 "name": "taxi",
-                "showIcon": "fas fa-taxi fa-fw",
-                "variants": []
+                "showIcon": "fa-taxi fa-fw"
             },
             {
                 "name": "message",
-                "showIcon": "fas fa-message fa-fw",
-                "variants": []
+                "showIcon": "fa-message fa-fw"
             },
             {
                 "name": "airbnb",
-                "showIcon": "fa fa-airbnb fa-fw",
-                "variants": []
+                "showIcon": "fa-airbnb fa-fw"
             }
         ]
     },
@@ -356,23 +287,19 @@
         "icons": [
             {
                 "name": "wifi",
-                "showIcon": "fas fa-wifi",
-                "variants": []
+                "showIcon": "fa-wifi"
             },
             {
                 "name": "vr-cardboard",
-                "showIcon": "fas fa-vr-cardboard",
-                "variants": []
+                "showIcon": "fa-vr-cardboard"
             },
             {
                 "name": "user",
-                "showIcon": "fas fa-user",
-                "variants": []
+                "showIcon": "fa-user"
             },
             {
                 "name": "umbrella",
-                "showIcon": "fas fa-umbrella",
-                "variants": []
+                "showIcon": "fa-umbrella"
             }
         ]
     }

@@ -13,6 +13,7 @@
     let color = "#cccccc"
     let selectedIcon = ""
     let selectedIconName = ""
+    let selectedIconVariant = "fas"
     window.addEventListener("DOMContentLoaded", (e) => {
 
         // selecting DOM elms
@@ -30,7 +31,7 @@
                 content = iconInfo.cdn
                 message = "CDN copied"
             }else {
-                content = `<i class="${selectedIcon} ${size && size} ${rotation && rotation} ${animation && animation}" style="color: ${color};" />`
+                content = `<i class="${selectedIconVariant} ${selectedIcon} ${size && size} ${rotation && rotation} ${animation && animation}" style="color: ${color};" />`
                 message = "icon copied"
             }
             
@@ -40,6 +41,7 @@
             rotation = ""
             animation = ""
             selectedIcon = ""
+            selectedIconVariant = ""
     
             messageText.innerText = message
     
@@ -57,6 +59,7 @@
             color = "#cccccc"
             selectedIcon = e.target.getAttribute('data-attar')
             selectedIconName = e.target.getAttribute('title').replace('-',' ').toUpperCase()
+            selectedIconVariant = "fas"
         }
 
         showVersions();
@@ -88,7 +91,7 @@
                 }
 
                 let iTag = document.createElement('i');
-                iTag.setAttribute("class",`${icon.showIcon} svelte-1b7ynkf`);
+                iTag.setAttribute("class",`${selectedIconVariant} ${icon.showIcon} svelte-btmd0u`);
                 iTag.setAttribute("data-attar",`${icon.showIcon}`);
                 iTag.setAttribute("title", icon.name);
                 iTag.addEventListener('click',openIconInfo)
@@ -138,6 +141,7 @@
         size = ""
         rotation = ""
         animation = ""
+        selectedIconVariant = ""
     }
     
 </script>
@@ -168,7 +172,24 @@
                         <h3>{selectedIconName}</h3> <i on:click={closeIconInfoWindow} class="fa-solid fa-xmark"></i>
                     </div>
                     <div class="icon-preview">
-                        <i class="{selectedIcon} {size} {animation} {rotation}" style="color: {color};" title="home" on:click={copyText} />
+                        <i class="{selectedIconVariant} {selectedIcon} {size} {animation} {rotation}" style="color: {color};" title="home" on:click={copyText} />
+                    </div>
+                    <div class="variants">
+                        <div class="veriant">
+                            <i class="fas {selectedIcon}" on:click={() => selectedIconVariant = "fas"} style="color: {color};" title="home" />
+                        </div>
+                        <div class="veriant">
+                            <i class="far {selectedIcon}" on:click={() => selectedIconVariant = "far"} style="color: {color};" title="home" />
+                        </div>
+                        <div class="veriant">
+                            <i class="fad {selectedIcon}" on:click={() => selectedIconVariant = "fad"} style="color: {color};" title="home" />
+                        </div>
+                        <div class="veriant">
+                            <i class="fal {selectedIcon}" on:click={() => selectedIconVariant = "fal"} style="color: {color};" title="home" />
+                        </div>
+                        <div class="veriant">
+                            <i class="fat {selectedIcon}" on:click={() => selectedIconVariant = "fat"} style="color: {color};" title="home" />
+                        </div>
                     </div>
                     <div class="actions">
                         <div class="form-control">
@@ -344,12 +365,27 @@
         cursor: pointer;
         box-shadow: none;
     }
+    body section .icon-info-container .variants {
+        width: 100%;
+        padding: 1rem 1rem 0.5rem 1rem !important;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    body section .icon-info-container .variants .variant {
+        border: 1px solid white;
+        width: 18% !important;
+        height: 2rem !important;
+    }
+    body section .icon-info-container .variants i {
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem !important;
+    }
     body section .icon-info-container .actions {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 90% !important;
-        padding: 1rem 0 !important;
+        padding: 0.5rem 0 !important;
     }
     body section .icon-info-container .actions .form-control {
         display: flex;
