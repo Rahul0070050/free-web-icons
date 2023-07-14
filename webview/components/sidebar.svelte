@@ -31,7 +31,7 @@
                 content = iconInfo.cdn
                 message = "CDN copied"
             }else {
-                content = `<i class="${selectedIconVariant} ${selectedIcon} ${size && size} ${rotation && rotation} ${animation && animation}" style="color: ${color};" />`
+                content = `<i class="${selectedIconVariant} ${selectedIcon} ${size && size} ${rotation && rotation} ${animation && animation}" style="color: ${color};"></i>`
                 message = "icon copied"
             }
             
